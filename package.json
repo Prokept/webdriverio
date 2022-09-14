@@ -54,9 +54,7 @@
     "watch": "node ./scripts/build.js --watch",
     "watch:docs": "npm run docs:generate && cd website && npm i && npm start",
     "version": "npm run changelog && git add CHANGELOG.md",
-    "postinstall": "run-s postinstall:*",
-    "postinstall:husky": "npx husky install",
-    "postinstall:vulnerabilities": "node ./.husky/postinstall.js"
+    "postinstall": "run-s postinstall:*"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^8.5.2",
@@ -90,7 +88,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unicorn": "^43.0.2",
     "eslint-plugin-wdio": "^7.21.0",
-    "husky": "^8.0.1",
     "inquirer": "^9.1.1",
     "jsdom": "^20.0.0",
     "lerna": "^5.5.0",
